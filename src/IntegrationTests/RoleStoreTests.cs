@@ -20,7 +20,7 @@
 			manager.Create(role);
 
 			var savedRole = Roles.FindAll().Single();
-			Expect(savedRole.Name, Is.EqualTo(roleName));
+			Expect(savedRole.Name, Is.EqualTo("notadmin"));
 		}
 
 		[Test]
