@@ -40,7 +40,7 @@
 				.First(i => i.Key.Contains("Email"));
 			Expect(index.Key.Count(), Is.EqualTo(1));
 		}
-
+         
 		[Test]
 		public void EnsureUniqueIndexOnRoleName_NoIndexOnRoleName_AddsUniqueIndexOnRoleName()
 		{
@@ -54,7 +54,7 @@
 			var index = roles.GetIndexes()
 				.Where(i => i.IsUnique)
 				.Where(i => i.Key.Count() == 1)
-				.First(i => i.Key.Contains("Name"));
+				.First(i => i.Key.Contains("Name33"));
 			Expect(index.Key.Count(), Is.EqualTo(1));
 		}
 	}
