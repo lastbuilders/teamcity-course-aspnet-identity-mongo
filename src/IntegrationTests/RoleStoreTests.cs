@@ -34,7 +34,7 @@
 			var foundRole = manager.FindByName(roleName);
 
 			Expect(foundRole, Is.Not.Null);
-			Expect(foundRole.Name, Is.EqualTo(roleName));
+			Expect(foundRole.Name, Is.EqualTo("notadmin"));
 		}
 
 		[Test]
