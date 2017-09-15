@@ -54,7 +54,7 @@
 			var index = roles.GetIndexes()
 				.Where(i => i.IsUnique)
 				.Where(i => i.Key.Count() == 1)
-				.First(i => i.Key.Contains("Name33"));
+				.First(i => i.Key.Contains("Name"));
 			Expect(index.Key.Count(), Is.EqualTo(1));
 		}
 	}

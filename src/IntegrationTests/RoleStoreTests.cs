@@ -13,7 +13,7 @@
 		[Test]
 		public void Create_NewRole_Saves()
 		{
-			var roleName = "admin";
+			var roleName = "admin1";
 			var role = new IdentityRole(roleName);
 			var manager = GetRoleManager();
 
